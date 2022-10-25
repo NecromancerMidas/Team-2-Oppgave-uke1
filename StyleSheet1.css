@@ -1,3 +1,43 @@
-﻿body
+﻿body {
+    margin: 0;
+    font-size: 16px;
+}
+.container {
+    text-align: center;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 3fr 3fr;
+    grid-template-rows: 80px 3fr 3fr;
+    grid-template-areas: 
+    "header header header"
+    "main main main"
+    "nav aside aside"
+    "footer footer footer"
+    
+}
+
+header, nav, main, aside, footer
 {
+        background-color:blue;
+        color: #fff;
+        padding: 15px;
+        border: 2px black solid;
+}
+
+header {
+    grid-area: header;
+}
+main {
+    grid-area: main;
+}
+aside {
+    grid-area: aside;
+} 
+nav {
+    grid-area: nav;       }
+footer{
+    grid-area: footer;
+}
+button {
+    margin:2px
 }
