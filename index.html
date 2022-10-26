@@ -8,7 +8,7 @@
 </head>
 <body>
     <div class="container">
-        <header>ROBBERY</header>
+        <header> <b> ROBBERY</b></header>
         <main class="bilder">
             <div id="1" onclick="getloot(this.innerHTML)"><img class="image" src='img/ruby.png'/></div>
             <div id="2" onclick="getloot(this.innerHTML)"><img class="image" src='img/topaz.png'/></div>
@@ -20,11 +20,10 @@
         <nav>Button
             <br>
 
-            <button onclick="thief()">Trykk</button><br>
-            <Button onclick="showlootbag()">Trykk2</Button><br>
-            <button onclick="hidebag()">Trykk3</button>
+            <div><img class="image" src="img/inventory.png" onclick="thief()"></div><br>
+            
         </nav>
-        <aside id="box">Box
+        <aside id="box">
             <div id="inv"></div>
         </aside>
         <footer>made by Teamet2</footer>
