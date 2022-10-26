@@ -2,6 +2,12 @@
     margin: 0;
     font-size: 16px;
 }
+header{
+    padding-top: 3px;
+    font-size: 20px;
+    color: rgba(230, 255, 230, 0.7)
+    rgba(102, 255, 102, 0.7);
+}
 .container {
     text-align: center;
     height: 100vh;
@@ -42,20 +48,23 @@ button {
     margin:2px
 }
 
-.foto{
-   
-    width: 100%;
-	height: 200px;
-	object-fit: cover;
-	object-position: 30% 50%;
-}
+.image {
+    width: 150px;
+    height: 150px;
+}  
+
 .bilder{
     display: flex;
-    justify-content: center;
-    align-items: left;
-    flex-direction: column;
-    position: relative;
-  
+    justify-content: space-evenly;
 }
-}
+
+/* width: 20%;
+	float: left;
+	padding: 10px;
+
+
+    
+   
+ 
+
 
