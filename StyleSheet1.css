@@ -3,17 +3,13 @@
     font-size: 16px;
 }
 header{
-    padding-top: 3px;
+    padding-top: 5px;
     font-size: 30px;
     position: relative;
     font-family: sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 5px;
-    overflow: hidden;
+    letter-spacing: 5px;    
     background: linear-gradient(90deg, #000, #fff, #000);
-    background-repeat: no-repeat;
     background-size: 100%;
-    animation: animate 3s linear infinite;
   
 
    
@@ -35,11 +31,12 @@ header{
 
 header, nav, main, aside, footer
 {
-        /* background-color:rgb(213, 213, 239); */
+ 
         background: linear-gradient(90deg, #000, #fff, #000);
         color: black;
         padding: 15px;
         border: 1px rgba(86, 83, 83, 0.904) solid;
+       
 } 
 
 header {
@@ -70,11 +67,26 @@ button {
     justify-content: space-evenly;
 }
 
-/* width: 20%;
-	float: left;
-	padding: 10px;
 
 
+
+
+
+
+
+
+
+
+
+.racoonsprite {
+    margin:0px 0px 0px 49%;
+    text-align:center;
+    position:center;
+    display:flex;
+    height: 60px;
+    width: 50px;
+    background: url('img/racoon.png') 0px 0px;
+}
     
    
  

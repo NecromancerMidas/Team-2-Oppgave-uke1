@@ -9,13 +9,13 @@ let shown = false
 
 function getloot(loot) {
     bag += loot; //adds the inner.HTML
+    instaloot();
     console.log(getloot);
 }
 
 function showlootbag() {
      document.getElementById('inv').innerHTML = bag;//ads bag content to the div "inv" innerhtml
     shown = true
-
 }
 
 function hidebag() {
@@ -48,7 +48,48 @@ function random1() {
         bag += document.getElementById("4").innerHTML //else if statements to assign an image to each randomized number. 1 being equal to the id="1" putting a copy of that image in the var "bag".
 
     }
+    instaloot();
     console.log(random1)
+}
+function instaloot() { //this way if the bag is opened the loot gets added instantly. instead of opening and closing the bag.
+    if (shown === true) {
+        showlootbag()
+    }
+}
+function arrested() {
+    bag = ('');
+    hidebag();
 }
 
 
+
+
+
+
+
+var tID;
+
+function racoonsprite() {
+    document.getElementById("racoon").style.backgroundPosition = '-150px 0px';
+
+}
+
+
+
+
+function racoon() {
+    var position = -150;
+    const interval = 250;
+    const diff = -50;
+
+    tID = setInterval(() => {
+        document.getElementById("racoon").style.backgroundPosition = `-${position}px 0px`;
+
+        if (position < 250) { position = position - diff; }
+        else {
+            position = 150;
+        }
+    }
+        , interval);
+}
+document.getElementById("racoon").addEventListener("load", racoon())
