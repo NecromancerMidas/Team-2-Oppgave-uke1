@@ -9,20 +9,25 @@
 <body>
     <div class="container">
         <header>Header</header>
-        <main>Bilder</main>
+        <main class="bilder">Bilder 
+            <div onclick="getloot(this.innerHTML)"><img class="foto" src='img/ruby.png'/></div>
+            <div onclick="getloot(this.innerHTML)"><img class="foto" src='img/topaz.png'/></div>
+            <div onclick="getloot(this.innerHTML)"><img class="foto" src='img/sapphire.png'/></div>
+            <div onclick="getloot(this.innerHTML)"><img class="foto" src='img/money.png'/></div>
+        
+        </main>
         <nav>Button
             <br>
 
-            <button onclick="imageclick()">Trykk</button><br>
-            <Button>Trykk2</Button><br>
-            <button>Trykk3</button>
+            <button onclick="thief()">Trykk</button><br>
+            <Button onclick="showlootbag()">Trykk2</Button><br>
+            <button onclick="hidebag()">Trykk3</button>
         </nav>
-        <aside id="box">Box</aside>
+        <aside id="box">Box
+            <div id="inv"></div>
+        </aside>
         <footer>made by Teamet2</footer>
    </div>
-
-
-
 
 
 
